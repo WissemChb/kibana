@@ -1,0 +1,4 @@
+---
+# defaults file for kibana
+kibana_repo_redhat: "https://artifacts.elastic.co/downloads/kibana/kibana-6.0.0-x86_64.rpm"
+kibana_repo_debian: "https://artifacts.elastic.co/downloads/kibana/kibana-6.0.0-amd64.deb"

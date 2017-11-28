@@ -1,0 +1,14 @@
+- name: "Install kibana"
+  apt:
+    name: "{{ kibana_repo_debian }}"
+    state: latest
+
+- name: "Enable kibana"
+  service:
+    name: kibana
+    enabled: yes
+
+- name: "Start kibana"
+  service:
+    name: kibana
+    state: started
