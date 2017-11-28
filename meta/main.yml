@@ -35,7 +35,7 @@ galaxy_info:
   platforms:
   - name: Centos
     versions:
-     - 7
+     - all
   # - name: SomePlatform
   #   versions:
   #   - all
