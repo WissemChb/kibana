@@ -6,12 +6,9 @@
 
 - name : "Install prerequisite"
   yum:
-    name: {{item}}
+    name: [java-1.8.0-openjdk, java-1.8.0-openjdk-devel]
     state: latest
   become: yes
-  with_items:
-    - java-1.8.0-openjdk
-    - java-1.8.0-openjdk-devel
 
 - name: "Install kibana"
   yum:
