@@ -17,14 +17,23 @@
   yum:
     name: "{{ kibana_repo_redhat }}"
     state: latest
+  become: yes
+
+- name: "Copy config file"
+  copy:
+    src: "../files/kibana.yaml"
+    dest: "/etc/kibana/kibana.yaml"
+  become: yes
 
 - name: "Enable kibana"
   systemd:
     name: kibana
     enabled: yes
+  become: yes
 
 - name: "Start kibana"
   systemd:
     name: kibana
     state: started
+  become: yes
     
