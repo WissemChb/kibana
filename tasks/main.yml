@@ -1,5 +1,4 @@
 ---
-# tasks file for kibana
 - name: "Install Kibana in RedHat systems"
   include: kibana-{{ redhat_system }}.yml
   when: ansible_os_family == "RedHat"
