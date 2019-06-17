@@ -18,8 +18,8 @@
 
 - name: "Copy config file"
   copy:
-    src: "../files/kibana.yaml"
-    dest: "/etc/kibana/kibana.yaml"
+    src: "../files/kibana.yml"
+    dest: "/etc/kibana/kibana.yml"
   become: yes
 
 - name: "Enable kibana"
